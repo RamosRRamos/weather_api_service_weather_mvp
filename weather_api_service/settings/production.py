@@ -7,7 +7,7 @@ import mimetypes
 mimetypes.add_type("text/javascript", ".js", True)
 
 
-DEBUG = True
+DEBUG = False
 
 SECRET_KEY = config("SECRET_KEY")
 
@@ -111,7 +111,3 @@ LOGGING = {
     },
 }
 
-# Sentry
-# sentry_sdk.init(dsn=SENTRY_DSN, integrations=[DjangoIntegration()], release=COMMIT_SHA)
-
-DATETIME_FORMAT = "%Y-%m-%d %H:%M:%S"
