@@ -51,9 +51,5 @@ STORAGES = {
 }
 
 
-MIDDLEWARE.insert(  # insert RequestIDMiddleware on the top
-    0, "log_request_id.middleware.RequestIDMiddleware"
-)
-
 
 
